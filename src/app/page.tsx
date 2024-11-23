@@ -1,4 +1,5 @@
 import Bio from "@/sections/Bio";
+import AboutMe from "@/sections/AboutMe";
 import Footer from "@/sections/Footer";
 import WorkExperience from "@/sections/WorkExperience";
 import Education from "@/sections/Education";
@@ -13,6 +14,7 @@ export default function Home() {
         {/* Hello World */}
         <div className="text-black w-1/2">
           <Bio />
+          <AboutMe />
           <WorkExperience />
           <Education />
           <Skills />

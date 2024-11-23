@@ -8,7 +8,7 @@ import {
 
 export default function Bio() {
     return (
-        <section className="flex bg-green-700 p-5 justify-between rounded-xl">
+        <section className="flex bg-green-700 p-5 justify-between rounded-t-xl">
             <div className="block">
                 <div className="flex mb-1 relative">
                     <div className="text-3xl mr-3 font-bold">
@@ -22,10 +22,12 @@ export default function Bio() {
                     Full Stack Developer focused on learning through experimentation and product development.
                     I like to build webapps which makes life easier.
                 </div>
-                <a href="#" className="flex items-center hover:underline text-xs tracking-wider mb-2 space-x-1 w-36">
-                    <Image src={globeLightIcon} alt="globeIcon.svg" width={15} height={15} />
-                    <p>Dhanbad, Jharkhand</p>
-                </a>
+                <div className="inline-block">
+                    <a href="#" className="flex items-center hover:underline text-xs tracking-wider space-x-1 mb-2">
+                        <Image src={globeLightIcon} alt="globeIcon.svg" width={15} height={15} />
+                        <p>Dhanbad, Jharkhand</p>
+                    </a>
+                </div>
                 <div className="flex space-x-1">
                     <button className="border border-gray-500 rounded-md p-1"><Image src={mailLightIcon} alt="mailIcon.svg" width={20} height={20} /></button>
                     <button className="border border-gray-500 rounded-md p-1"><Image src={phoneLightIcon} alt="phoneIcon.svg" width={20} height={20} /></button>
