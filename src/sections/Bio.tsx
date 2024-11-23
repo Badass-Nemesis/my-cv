@@ -10,13 +10,13 @@ export default function Bio() {
     return (
         <section className="flex bg-green-700 p-5 justify-between rounded-t-xl">
             <div className="block">
-                <div className="flex mb-1 relative">
-                    <div className="text-3xl mr-3 font-bold">
+                <div className="flex items-baseline mb-1">
+                    <div className="inline-block text-3xl font-bold relative">
                         Harshit Anant
+                        <button className="bg-green-600 rounded-md px-2 py-0.5 text-xs tracking-widest absolute right-3 bottom-1 translate-x-24">
+                            Hire Me!
+                        </button>
                     </div>
-                    <button className="bg-gray-300 rounded-md px-2 py-0.5 text-xs tracking-widest absolute bottom-1 left-52">
-                        Hire Me!
-                    </button>
                 </div>
                 <div className="tracking-wider mb-1">
                     Full Stack Developer focused on learning through experimentation and product development.
