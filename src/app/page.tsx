@@ -10,18 +10,18 @@ import OpenSourceContributions from "@/sections/OpenSourceContributions";
 export default function Home() {
   return (
     <>
-      <div className="flex bg-green-300 h-auto p-10 justify-center">
+      <div className="flex flex-col text-white h-auto p-10 justify-center items-center overflow-y-auto">
         {/* Hello World */}
-        <div className="text-black w-1/2">
+        <div className="w-1/2 rounded-xl overflow-hidden">
           <Bio />
           <AboutMe />
-          <WorkExperience />
+          {/* <WorkExperience /> */}
           <Education />
           <Skills />
           <Projects />
-          <OpenSourceContributions />
-          <Footer />
+          {/* <OpenSourceContributions /> */}
         </div>
+        <Footer />
       </div>
     </>
   );

@@ -8,9 +8,9 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        heading: ['Monsterrat', 'monospace'],
+        content: ['JetBrains Mono', 'sans-serif'],
       }
     },
   },

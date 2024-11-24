@@ -1,7 +1,7 @@
 export default function OpenSourceContributions() {
     return (
-        <div>
-            This is open source contributions
-        </div>
+        <section className="flex p-5 items-center justify-center font-heading">
+            My introverted a$$ has no open-source contributions.
+        </section>
     );
 }
