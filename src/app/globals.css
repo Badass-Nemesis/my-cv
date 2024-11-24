@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .tags {
+        @apply bg-gray-800 inline-block rounded-lg px-4 py-0.5 transition hover:bg-gray-600 duration-500;
+    }
+
+    .project-heading-live {
+        @apply font-heading font-semibold transition hover:underline hover:scale-105 duration-500;
+    }
+
+    .project-heading {
+        @apply font-heading font-semibold;
+    }
+
+    .icon-btn {
+        @apply border border-gray-500 rounded-md p-1 transform hover:scale-110 duration-500;
+    }
+
+    .hire-me-btn {
+        @apply bg-gray-800 rounded-md px-2 py-0.5 text-xs font-content tracking-widest absolute right-1 bottom-1 transform translate-x-24 hover:scale-110 hover:bg-gray-600 duration-500;
+    }
+
+    .location-link {
+        @apply flex items-center hover:underline text-xs tracking-wider space-x-1 mb-2 hover:scale-110 hover:text-gray-300 duration-500;
+    }
+}
