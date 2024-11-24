@@ -57,7 +57,7 @@ export default function Projects() {
     return (
         <section className="bg-green-700 p-5">
             <h1 className="text-lg font-semibold mb-2">Projects</h1>
-            <div className="grid grid-cols-auto-fill gap-4">
+            <div className="grid grid-cols-3 gap-4">
                 {projects.map((project, index) => (
                     <Card key={index} title={project.title} description={project.description} tags={project.tags} />
                 ))}
