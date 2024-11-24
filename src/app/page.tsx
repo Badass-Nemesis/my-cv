@@ -10,7 +10,7 @@ import OpenSourceContributions from "@/sections/OpenSourceContributions";
 export default function Home() {
   return (
     <>
-      <div className="flex bg-yellow-500 h-auto p-10 justify-center">
+      <div className="flex bg-green-300 h-auto p-10 justify-center">
         {/* Hello World */}
         <div className="text-black w-1/2">
           <Bio />
