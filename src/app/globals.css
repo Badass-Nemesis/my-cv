@@ -38,6 +38,18 @@
     .footer {
         @apply fixed bottom-0 w-full flex justify-center items-center bg-background border-t border-border font-content text-sm text-text-content transition-colors duration-500;
     }
+
+    .modal {
+        @apply fixed inset-0 bg-gray-700/60 flex flex-col items-center justify-center overflow-hidden z-40 p-10;
+    }
+
+    .modal-close-btn {
+        @apply rounded-lg py-2 px-4 bg-green-900;
+    }
+
+    .modal-container {
+        @apply w-2/3 h-2/3 bg-white flex justify-center items-center text-text-content;
+    }
 }
 
 .light {

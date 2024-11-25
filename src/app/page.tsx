@@ -6,13 +6,14 @@ import Education from "@/sections/Education";
 import Skills from "@/sections/Skills";
 import Projects from "@/sections/Projects";
 import OpenSourceContributions from "@/sections/OpenSourceContributions";
+import { ThemeProvider } from "@/components/ThemeContext";
 
 export default function Home() {
   return (
-    <>
+    <ThemeProvider>
       <div className="flex flex-col text-white h-auto md:p-10 justify-center items-center overflow-y-auto">
         {/* Hello World */}
-        <div className="container w-full md:w-a4lite lg:w-a4 rounded-xl overflow-hidden">
+        <div id="body-wala" className="container w-full md:w-a4lite lg:w-a4 rounded-xl overflow-hidden">
           <Bio />
           <AboutMe />
           {/* <WorkExperience /> */}
@@ -23,6 +24,6 @@ export default function Home() {
         </div>
         <Footer />
       </div>
-    </>
+    </ThemeProvider>
   );
 }

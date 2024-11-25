@@ -1,9 +1,11 @@
+import FooterModalButton from "@/components/FooterModalButton";
+
 export default function Footer() {
     return (
         <footer className="footer">
-            <button>
+            <FooterModalButton>
                 Click me for options
-            </button>
+            </FooterModalButton>
         </footer>
     );
 }

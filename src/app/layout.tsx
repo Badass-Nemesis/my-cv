@@ -1,19 +1,6 @@
 import type { Metadata } from "next";
-// import localFont from "next/font/local";
 import "./globals.css";
-import { useEffect, useState } from "react";
-import ThemeSwitch from "@/components/ThemeSwitch";
-
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
+import { ThemeProvider } from "@/components/ThemeContext";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,19 +13,36 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        {/* <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet" /> */}
-        {/* <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet" /> */}
-        {/* <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" /> */}
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
-
-      </head>
-      <body className="bg-background transition-colors duration-500">
-        <ThemeSwitch />
-        {children}
-      </body>
-    </html>
+    <ThemeProvider>
+      <html lang="en" suppressHydrationWarning>
+        <head>
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+          <style>
+            {`
+              body {
+                transition: background-color 0.5s ease;
+              }
+              .light {
+                --background-color: #ffffff;
+                --text-color: #000000;
+              }
+              .dark {
+                --background-color: #181819;
+                --text-color: #ffffff;
+              }
+              body {
+                background-color: var(--background-color);
+                color: var(--text-color);
+              }
+            `}
+          </style>
+        </head>
+        <body className="bg-background transition-colors duration-500">
+          {children}
+        </body>
+      </html>
+    </ThemeProvider>
   );
 }
