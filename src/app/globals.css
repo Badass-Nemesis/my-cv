@@ -34,6 +34,10 @@
     .education {
         @apply bg-tag p-3 rounded-lg transition hover:bg-tag-hover duration-500
     }
+
+    .footer {
+        @apply fixed bottom-0 w-full flex justify-center items-center bg-background border-t border-border font-content text-sm text-text-content transition-colors duration-500;
+    }
 }
 
 .light {
