@@ -1,11 +1,20 @@
 interface TagInterface {
     name: string;
+    skillsTag?: boolean;
 }
 
-export default function Tags({ name }: TagInterface) {
+export default function Tags({ name, skillsTag = false }: TagInterface) {
     return (
-        <div className="tags">
-            {name}
+        <div>
+            {skillsTag ? (
+                <div className="skill-tags">
+                    {name}
+                </div>
+            ) : (
+                <div className="tags">
+                    {name}
+                </div>
+            )}
         </div>
     );
 }

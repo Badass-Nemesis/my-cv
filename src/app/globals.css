@@ -4,26 +4,64 @@
 
 @layer components {
     .tags {
-        @apply bg-gray-800 inline-block rounded-lg px-4 py-0.5 transition hover:bg-gray-600 duration-500;
+        @apply bg-tag inline-block rounded-lg px-4 py-0.5 transition hover:bg-tag-hover text-text-content duration-500;
+    }
+
+    .skill-tags {
+        @apply bg-skills inline-block rounded-lg px-4 py-0.5 transition hover:bg-skills-hover text-skills-text duration-500;
     }
 
     .project-heading-live {
-        @apply font-heading font-semibold transition hover:underline hover:scale-105 duration-500;
+        @apply font-heading font-semibold text-text-heading transition hover:underline hover:scale-105 duration-500;
     }
 
     .project-heading {
-        @apply font-heading font-semibold;
+        @apply font-heading text-text-heading font-semibold;
     }
 
     .icon-btn {
-        @apply border border-gray-500 rounded-md p-1 transform hover:scale-110 duration-500;
+        @apply border border-border rounded-md p-1 transform hover:scale-110 hover:bg-tag-hover duration-500;
     }
 
     .hire-me-btn {
-        @apply bg-gray-800 rounded-md px-2 py-0.5 text-xs font-content tracking-widest absolute right-1 bottom-1 transform translate-x-24 hover:scale-110 hover:bg-gray-600 duration-500;
+        @apply bg-tag rounded-md px-2 py-0.5 ml-3 text-xs font-content tracking-widest transform hover:scale-110 hover:bg-tag-hover duration-500;
     }
 
     .location-link {
-        @apply flex items-center hover:underline text-xs tracking-wider space-x-1 mb-2 hover:scale-110 hover:text-gray-300 duration-500;
+        @apply flex items-center hover:underline text-xs text-text-content tracking-wider space-x-1 mb-2 hover:scale-110 hover:text-text-content-hover duration-500;
     }
+
+    .education {
+        @apply bg-tag p-3 rounded-lg transition hover:bg-tag-hover duration-500
+    }
+}
+
+.light {
+    --background-color: #f9fafb;
+    --text-color-heading: black;
+    --text-color-content: #374151;
+    --text-color-content-hover: #030712;
+    --tag-color: #d1d5db;
+    --tag-color-hover: #e5e7eb;
+    --border-color: #d1d5db;
+    --education-color-heading: #1f2937;
+    --pulse-animation-color: #22c55e;
+    --skills-tag-color: #374151;
+    --skills-tag-color-hover: #6b7280;
+    --skills-tag-text-color: #f3f4f6;
+}
+
+.dark {
+    --background-color: #181819;
+    --text-color-heading: white;
+    --text-color-content: #d1d5db;
+    --text-color-content-hover: #f3f4f6;
+    --tag-color: #1f2937;
+    --tag-color-hover: #4b5563;
+    --border-color: #6b7280;
+    --education-color-heading: #f3f4f6;
+    --pulse-animation-color: #86efac;
+    --skills-tag-color: #e5e7eb;
+    --skills-tag-color-hover: #9ca3af;
+    --skills-tag-text-color: #111827;
 }

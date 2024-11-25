@@ -10,9 +10,9 @@ import OpenSourceContributions from "@/sections/OpenSourceContributions";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col text-white h-auto p-10 justify-center items-center overflow-y-auto">
+      <div className="flex flex-col text-white h-auto md:p-10 justify-center items-center overflow-y-auto">
         {/* Hello World */}
-        <div className="w-1/2 rounded-xl overflow-hidden">
+        <div className="container w-full md:w-a4lite lg:w-a4 rounded-xl overflow-hidden">
           <Bio />
           <AboutMe />
           {/* <WorkExperience /> */}

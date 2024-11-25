@@ -12,6 +12,26 @@ export default {
       fontFamily: {
         heading: ['Monsterrat', 'monospace'],
         content: ['JetBrains Mono', 'sans-serif'],
+      },
+      width: {
+        'a4': '8in',
+        'a4lite': '7in',
+      },
+      colors: {
+        background: 'var(--background-color)',
+        'text-heading': 'var(--text-color-heading)',
+        'text-content': 'var(--text-color-content)',
+        'text-content-hover': 'var(--text-color-content-hover)',
+        'tag': 'var(--tag-color)',
+        'tag-hover': 'var(--tag-color-hover)',
+        border: 'var(--border-color)',
+        'icon-hover': 'var(--icon-color-hover)',
+        'edu-heading': 'var(--education-color-heading)',
+        'pulse-color': 'var(--pulse-animation-color)',
+        'skills': 'var(--skills-tag-color)',
+        'skills-hover': 'var(--skills-tag-color-hover)', 
+        'skills-text': 'var(--skills-tag-text-color)',
+
       }
     },
   },
