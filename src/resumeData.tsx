@@ -1,6 +1,7 @@
 import {
-    githubIcon, globeIcon, linkedinIcon, mailIcon,
-    pdfIcon, phoneIcon, xIcon, closeIcon, myPic
+    githubIcon, globeIcon, linkedinIcon, mailIcon, leetcodeIcon,
+    pdfIcon, phoneIcon, xIcon, closeIcon, myPic, codeforcesIcon,
+    codechefIcon,
 } from '@/assets/index';
 
 export const RESUME_DATA = {
@@ -11,8 +12,9 @@ export const RESUME_DATA = {
     location: "Dhanbad, Jharkhand",
     locationLink: "https://www.google.com/maps/place/Dhanbad",
     about:
-        "Full Stack Developer focused on learning through experimentation and product development. I like to build webapps which makes life easier.",
-    summary: "I'm just a guy on Earth. As a Full Stack Engineer, I specialize in taking products from concept to launch.I excel in leading teams and creating environments where individuals perform at their best. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience working remotely with companies worldwide.",
+        "Full Stack Developer eager to build web apps that simplify life through innovation and experimentation.",
+    summary:
+        "I'm just a guy on Earth, a dedicated Full Stack Developer passionate about learning through hands-on projects. I mainly focus on backend development with Node.js/Express.js and have recently started exploring TypeScript. I've dabbled in Java, particularly with a servlet project and DSA. I also enjoy working with React and Next.js to expand my skills. Outside of coding, I relax by playing games.",
     // personalWebsiteUrl: "https://jarocki.me",
     contact: [
         {
@@ -40,6 +42,21 @@ export const RESUME_DATA = {
         //     url: "https://x.com/BartoszJarocki",
         //     icon: xIcon,
         // },
+        {
+            name: "Codeforces",
+            url: "https://codeforces.com/profile/Badass_Nemesis",
+            icon: codeforcesIcon,
+        },
+        {
+            name: "LeetCode",
+            url: "https://leetcode.com/u/harshitanant29/",
+            icon: leetcodeIcon,
+        },
+        {
+            name: "CodeChef",
+            url: "https://www.codechef.com/users/badassnemesis",
+            icon: codechefIcon,
+        },
         {
             name: "CV Document",
             url: "https://drive.google.com/file/d/1f_0ZayXhCRpiPkLd33hShE-m2aNdDnT9/view",
@@ -134,7 +151,7 @@ export const RESUME_DATA = {
                 "Tailwind CSS",
             ],
             description:
-                "A minimalist cv page deployed online. Inspired by the minimalist cv of BartoszJarocki/cv",
+                "A minimalist & responsive cv page deployed online. Inspired by the minimalist cv of BartoszJarocki/cv",
             liveLink: "#",
         },
         {

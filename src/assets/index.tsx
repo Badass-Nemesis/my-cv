@@ -7,6 +7,9 @@ import phoneIcon from "@/assets/phoneIcon.svg"
 import xIcon from "@/assets/XIcon.svg"
 import closeIcon from "@/assets/CloseIcon.svg"
 import myPic from "@/assets/myPic.jpg";
+import codeforcesIcon from "@/assets/CodeforcesIcon.svg";
+import leetcodeIcon from "@/assets/LeetCodeIcon.svg";
+import codechefIcon from "@/assets/CodeChefIcon.svg";
 
 export {
     githubIcon,
@@ -17,5 +20,8 @@ export {
     phoneIcon,
     xIcon,
     closeIcon,
-    myPic
+    myPic,
+    codeforcesIcon,
+    leetcodeIcon,
+    codechefIcon,
 }
