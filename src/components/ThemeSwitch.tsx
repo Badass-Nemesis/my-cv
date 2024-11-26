@@ -42,12 +42,16 @@
 import React from 'react';
 import { useTheme } from './ThemeContext';
 
-export default function ThemeSwitch() {
+interface ThemeSwitchInterface {
+    className?: string;
+}
+
+export default function ThemeSwitch({ className = "" }: ThemeSwitchInterface) {
     const { theme, toggleTheme } = useTheme();
 
     return (
-        <button onClick={toggleTheme} className="py-2 px-4 bg-red-900 rounded-lg">
+        <button onClick={toggleTheme} className={className} >
             Toggle {theme === 'light' ? 'Dark' : 'Light'} mode
-        </button>
+        </button >
     );
 }

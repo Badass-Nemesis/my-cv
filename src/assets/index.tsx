@@ -1,26 +1,21 @@
-import githubDarkIcon from "@/assets/GithubDarkIcon.svg"
-import githubLightIcon from "@/assets/GithubLightIcon.svg"
-import globeDarkIcon from "@/assets/GlobeDarkIcon.svg"
-import globeLightIcon from "@/assets/GlobeLightIcon.svg"
-import linkedinDarkIcon from "@/assets/LinkedInDarkIcon.svg"
-import linkedinLightIcon from "@/assets/LinkedinLightIcon.svg"
-import mailDarkIcon from "@/assets/MailDarkIcon.svg"
-import mailLightIcon from "@/assets/MailLightIcon.svg"
-import pdfDarkIcon from "@/assets/PdfDarkIcon.svg"
-import pdfLightIcon from "@/assets/PdfLightIcon.svg"
-import phoneDarkIcon from "@/assets/phoneDarkIcon.svg"
-import phoneLightIcon from "@/assets/phoneLightIcon.svg"
-import xDarkIcon from "@/assets/XDarkIcon.svg"
-import xLightIcon from "@/assets/XLightIcon.svg"
+import githubIcon from "@/assets/GithubIcon.svg"
+import globeIcon from "@/assets/GlobeIcon.svg"
+import linkedinIcon from "@/assets/LinkedinIcon.svg"
+import mailIcon from "@/assets/MailIcon.svg"
+import pdfIcon from "@/assets/PdfIcon.svg"
+import phoneIcon from "@/assets/phoneIcon.svg"
+import xIcon from "@/assets/XIcon.svg"
+import closeIcon from "@/assets/CloseIcon.svg"
 import myPic from "@/assets/myPic.jpg";
 
 export {
-    githubDarkIcon, githubLightIcon,
-    globeDarkIcon, globeLightIcon,
-    linkedinDarkIcon, linkedinLightIcon,
-    mailDarkIcon, mailLightIcon,
-    pdfDarkIcon, pdfLightIcon,
-    phoneDarkIcon, phoneLightIcon,
-    xDarkIcon, xLightIcon,
+    githubIcon,
+    globeIcon,
+    linkedinIcon,
+    mailIcon,
+    pdfIcon,
+    phoneIcon,
+    xIcon,
+    closeIcon,
     myPic
 }

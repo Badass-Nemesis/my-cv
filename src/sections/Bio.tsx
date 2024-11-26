@@ -1,11 +1,10 @@
 import Image from "next/image";
 import {
-    githubDarkIcon, githubLightIcon, globeDarkIcon, globeLightIcon,
-    linkedinDarkIcon, linkedinLightIcon, mailDarkIcon, mailLightIcon,
-    pdfDarkIcon, pdfLightIcon, phoneDarkIcon, phoneLightIcon,
-    xDarkIcon, xLightIcon, myPic
+    githubIcon, globeIcon, linkedinIcon, mailIcon,
+    pdfIcon, phoneIcon, xIcon, myPic
 } from "@/assets/index"
 import IconButton from "@/components/IconButton";
+import Location from "@/components/Location";
 
 export default function Bio() {
     return (
@@ -22,18 +21,21 @@ export default function Bio() {
                     I like to build webapps which makes life easier.
                 </div>
                 <div className="inline-block">
-                    <a href="#" className="location-link">
-                        <Image src={globeLightIcon} alt="globeIcon.svg" width={15} height={15} />
-                        <p>Dhanbad, Jharkhand</p>
-                    </a>
+                    <Location />
                 </div>
                 <div className="flex space-x-1">
-                    <IconButton link="#" darkModeIconSrc={mailDarkIcon.src} lightModeIconSrc={mailLightIcon.src} />
+                    {/* <IconButton link="#" darkModeIconSrc={mailDarkIcon.src} lightModeIconSrc={mailLightIcon.src} />
                     <IconButton link="#" darkModeIconSrc={phoneDarkIcon.src} lightModeIconSrc={phoneLightIcon.src} />
                     <IconButton link="#" darkModeIconSrc={githubDarkIcon.src} lightModeIconSrc={githubLightIcon.src} />
                     <IconButton link="#" darkModeIconSrc={linkedinDarkIcon.src} lightModeIconSrc={linkedinLightIcon.src} />
-                    <IconButton link="#" darkModeIconSrc={pdfDarkIcon.src} lightModeIconSrc={pdfLightIcon.src} />
+                    <IconButton link="#" darkModeIconSrc={pdfDarkIcon.src} lightModeIconSrc={pdfLightIcon.src} /> */}
+                    <IconButton link="#" iconSrc={mailIcon.src} />
+                    <IconButton link="#" iconSrc={phoneIcon.src} />
+                    <IconButton link="#" iconSrc={githubIcon.src} />
+                    <IconButton link="#" iconSrc={linkedinIcon.src} />
+                    <IconButton link="#" iconSrc={pdfIcon.src} />
                 </div>
+
             </div>
             <div className="flex flex-shrink-0 justify-center items-center w-32 md:w-40">
                 <Image src={myPic} alt="myPic.jpg" className="rounded-xl" />

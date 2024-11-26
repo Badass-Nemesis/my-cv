@@ -1,6 +1,9 @@
 import { ReactNode, useEffect } from "react";
 import ReactPortal from "./ReactPortal";
-import ThemeSwitch from "./ThemeSwitch";
+import { closeIcon } from "@/assets";
+import Image from "next/image";
+import { useTheme } from "@/components/ThemeContext";
+import IconButton from "./IconButton";
 
 interface ModalInterface {
     children: ReactNode;
@@ -9,6 +12,8 @@ interface ModalInterface {
 }
 
 export default function Modal({ children, isOpen, handleClose }: ModalInterface) {
+    const { theme } = useTheme(); // Access the current theme
+
     useEffect(() => {
         if (isOpen && isOpen === true) {
             document.body.classList.add("overflow-hidden"); // for no scrolling
@@ -40,15 +45,20 @@ export default function Modal({ children, isOpen, handleClose }: ModalInterface)
 
     return (
         <ReactPortal>
-            <div className="modal" >
-                <div className="modal-container ">
-                    <button className="modal-close-btn " onClick={handleClose}>
-                        Close
-                    </button>
+            <div className="modal">
+                <div className="modal-container relative">
+                    <div>
+                        <button className="modal-close-btn" onClick={handleClose}>
+                            <Image
+                                src={closeIcon}
+                                alt="closeIcon"
+                                style={{ filter: theme === 'dark' ? 'invert(100%)' : 'none' }}
+                            />
+                        </button>
+                    </div>
                     {children}
-                    <ThemeSwitch />
                 </div>
             </div>
-        </ReactPortal >
+        </ReactPortal>
     );
 }

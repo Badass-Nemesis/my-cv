@@ -31,6 +31,9 @@ export default {
         'skills': 'var(--skills-tag-color)',
         'skills-hover': 'var(--skills-tag-color-hover)', 
         'skills-text': 'var(--skills-tag-text-color)',
+        'modal-container': 'var(--modal-container-bg-color)',
+        'modal-btn': 'var(--modal-btn-border-color)',
+        'modal-btn-hover': 'var(--modal-btn-color-hover)',
 
       }
     },
