@@ -1,5 +1,6 @@
 'use client'
 
+import { RESUME_DATA } from "@/resumeData";
 import Image from "next/image";
 import { globeIcon } from "@/assets";
 import { useTheme } from "./ThemeContext";
@@ -14,14 +15,14 @@ export default function Location() {
     }, [theme])
 
     return (
-        <a href="#" className="location-link">
+        <a href={RESUME_DATA.locationLink} className="location-link">
             <Image
                 src={globeIcon}
                 alt="globeIcon.svg"
                 width={15} height={15}
                 style={{ filter: isDarkMode ? 'invert(100%)' : 'none' }}
             />
-            <p>Dhanbad, Jharkhand</p>
+            <p>{RESUME_DATA.location}</p>
         </a>
     );
 }

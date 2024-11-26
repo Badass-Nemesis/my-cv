@@ -1,3 +1,5 @@
+import { RESUME_DATA } from "@/resumeData";
+
 export default function AboutMe() {
     return (
         <section className="p-5">
@@ -5,11 +7,7 @@ export default function AboutMe() {
                 About Me
             </h1>
             <p className="font-content text-text-content text-sm md:text-base tracking-tight text-gray-300">
-                I'm just a guy on Earth.
-                As a Full Stack Engineer, I specialize in taking products from concept to launch.
-                I excel in leading teams and creating environments where individuals perform at their best. 
-                Currently, I work mostly with TypeScript, React, Node.js, and GraphQL.
-                I have over 8 years of experience working remotely with companies worldwide.
+                {RESUME_DATA.summary}
             </p>
         </section>
     );

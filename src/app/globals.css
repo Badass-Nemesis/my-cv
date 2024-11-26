@@ -52,7 +52,7 @@
     }
 
     .modal-btn {
-        @apply bg-modal-container border border-modal-btn rounded-md py-1.5 px-4 w-full transform hover:scale-110 hover:bg-modal-btn-hover duration-500 font-content;
+        @apply bg-modal-container flex justify-center items-center border border-modal-btn rounded-md py-1.5 px-4 w-full transform hover:scale-110 hover:bg-modal-btn-hover duration-500 font-content;
     }
 }
 

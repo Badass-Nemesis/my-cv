@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer className="footer">
             <FooterModalButton>
-                Click me for options
+                Press me for options
             </FooterModalButton>
         </footer>
     );

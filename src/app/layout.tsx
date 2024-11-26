@@ -20,23 +20,6 @@ export default function RootLayout({
           <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
           <style>
-            {`
-              body {
-                transition: background-color 0.5s ease;
-              }
-              .light {
-                --background-color: #ffffff;
-                --text-color: #000000;
-              }
-              .dark {
-                --background-color: #181819;
-                --text-color: #ffffff;
-              }
-              body {
-                background-color: var(--background-color);
-                color: var(--text-color);
-              }
-            `}
           </style>
         </head>
         <body className="bg-background transition-colors duration-500">

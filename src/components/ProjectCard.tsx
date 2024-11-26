@@ -5,13 +5,13 @@ interface ProjectCardInterface {
     isLive: boolean;
     liveLink?: string;
     description: string;
-    tags?: string[];
+    techStack: readonly string[]; // added readonly because it was causing type error in Projects file
 }
 
 // putting tags = [] so that tags.map doesn't give undefined error
-export default function ProjectCard({ title, isLive, liveLink, description, tags = [] }: ProjectCardInterface) {
+export default function ProjectCard({ title, isLive, liveLink, description, techStack = [] }: ProjectCardInterface) {
     return (
-        <div className="border border-gray-600 p-3 rounded-lg">
+        <div className="border border-gray-600 p-3 rounded-lg flex flex-col">
             <div className="flex items-center mb-2">
                 {isLive ? (
                     <div className="flex flex-row items-center">
@@ -24,12 +24,12 @@ export default function ProjectCard({ title, isLive, liveLink, description, tags
                     <h1 className="project-heading">{title}</h1>
                 )}
             </div>
-            <p className="font-content text-xs text-text-content mb-2">
+            <p className="font-content text-xs text-text-content mb-4">
                 {description}
             </p>
-            <div className="flex flex-wrap gap-1.5 text-xs tracking-tighter font-content">
-                {tags.map((tag) => (
-                    <Tag name={tag} /> // this is basically prop-drilling. I need to fix this
+            <div className="flex flex-wrap gap-1.5 text-xs tracking-tighter font-content mt-auto">
+                {techStack.map((stack) => (
+                    <Tag name={stack} /> // this is basically prop-drilling. I need to fix this
                 ))}
             </div>
         </div>
