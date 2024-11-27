@@ -3,7 +3,7 @@ import globeIcon from "@/assets/GlobeIcon.svg"
 import linkedinIcon from "@/assets/LinkedinIcon.svg"
 import mailIcon from "@/assets/MailIcon.svg"
 import pdfIcon from "@/assets/PdfIcon.svg"
-import phoneIcon from "@/assets/phoneIcon.svg"
+import phoneIcon from "@/assets/PhoneIcon.svg"
 import xIcon from "@/assets/XIcon.svg"
 import closeIcon from "@/assets/CloseIcon.svg"
 import myPic from "@/assets/myPic.jpg";

@@ -3,7 +3,7 @@ import ReactPortal from "./ReactPortal";
 import { closeIcon } from "@/assets";
 import Image from "next/image";
 import { useTheme } from "@/components/ThemeContext";
-import IconButton from "./IconButton";
+// import IconButton from "./IconButton";
 
 interface ModalInterface {
     children: ReactNode;
@@ -15,8 +15,10 @@ export default function Modal({ children, isOpen, handleClose }: ModalInterface)
     const { theme } = useTheme(); // Access the current theme
 
     useEffect(() => {
-        if (isOpen && isOpen === true) {
+        if (isOpen) {
             document.body.classList.add("overflow-hidden"); // for no scrolling
+        } else {
+            document.body.classList.remove("overflow-hidden");
         }
 
         // for closing using Escape Key
@@ -29,7 +31,7 @@ export default function Modal({ children, isOpen, handleClose }: ModalInterface)
             if (e.target instanceof Element && e.target.closest(".modal-container") === null) {
                 handleClose();
             }
-        }
+        };
 
         document.body.addEventListener("click", closeOnOutsideClick);
         document.body.addEventListener("keydown", closeOnEscapeKey);
@@ -38,8 +40,8 @@ export default function Modal({ children, isOpen, handleClose }: ModalInterface)
             document.body.classList.remove("overflow-hidden");
             document.body.removeEventListener("keydown", closeOnEscapeKey);
             document.body.removeEventListener("click", closeOnOutsideClick);
-        }
-    }, [handleClose])
+        };
+    }, [isOpen, handleClose]);
 
     if (!isOpen) return null;
 

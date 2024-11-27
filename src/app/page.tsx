@@ -1,11 +1,11 @@
 import Bio from "@/sections/Bio";
 import AboutMe from "@/sections/AboutMe";
 import Footer from "@/sections/Footer";
-import WorkExperience from "@/sections/WorkExperience";
+// import WorkExperience from "@/sections/WorkExperience";
 import Education from "@/sections/Education";
 import Skills from "@/sections/Skills";
 import Projects from "@/sections/Projects";
-import OpenSourceContributions from "@/sections/OpenSourceContributions";
+// import OpenSourceContributions from "@/sections/OpenSourceContributions";
 import { ThemeProvider } from "@/components/ThemeContext";
 
 export default function Home() {

@@ -1,7 +1,7 @@
 import {
-    githubIcon, globeIcon, linkedinIcon, mailIcon, leetcodeIcon,
-    pdfIcon, phoneIcon, xIcon, closeIcon, myPic, codeforcesIcon,
-    codechefIcon,
+    githubIcon, linkedinIcon, mailIcon, leetcodeIcon,
+    pdfIcon, phoneIcon, myPic, codeforcesIcon, codechefIcon,
+    // xIcon, closeIcon, globeIcon,
 } from '@/assets/index';
 
 export const RESUME_DATA = {

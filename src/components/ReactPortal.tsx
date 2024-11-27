@@ -25,7 +25,7 @@ export default function ReactPortal({ children }: ReactPortalInterface) {
 
     useLayoutEffect(() => {
         const element = createWrapperAndAppendToBody("react-portal-wrapper");;
-        let systemCreated = true;
+        const systemCreated = true;
 
         setWrapperElement(element);
 

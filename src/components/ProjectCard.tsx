@@ -28,8 +28,8 @@ export default function ProjectCard({ title, isLive, liveLink, description, tech
                 {description}
             </p>
             <div className="flex flex-wrap gap-1.5 text-xs tracking-tighter font-content mt-auto">
-                {techStack.map((stack) => (
-                    <Tag name={stack} /> // this is basically prop-drilling. I need to fix this
+                {techStack.map((stack, index) => (
+                    <Tag name={stack} key={index} /> // this is basically prop-drilling. I need to fix this
                 ))}
             </div>
         </div>
