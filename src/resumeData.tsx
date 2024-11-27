@@ -144,7 +144,7 @@ export const RESUME_DATA = {
         },
         {
             title: "CV",
-            isLive: false,
+            isLive: true,
             techStack: [
                 "TypeScript",
                 "ReactJS/Next.js",
@@ -152,7 +152,7 @@ export const RESUME_DATA = {
             ],
             description:
                 "A minimalist & responsive cv page deployed online. Inspired by the minimalist cv of BartoszJarocki/cv",
-            liveLink: "#",
+            liveLink: "http://13.203.75.14/",
         },
         {
             title: "School Proximity API",

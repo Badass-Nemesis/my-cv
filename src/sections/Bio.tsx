@@ -27,7 +27,7 @@ export default function Bio() {
                 <div className="inline-block">
                     <Location />
                 </div>
-                <div className="flex space-x-1">
+                <div className="flex flex-wrap gap-1">
                     {RESUME_DATA.contact.map((singleContact, index) => (
                         <IconButton
                             key={index}
