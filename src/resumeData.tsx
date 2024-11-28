@@ -113,6 +113,7 @@ export const RESUME_DATA = {
             description:
                 "A webapp to manage finances, fetch Paytm Payments Bank's passbook details from your gmail, create category, use interactive graph and an OpenAI powered Chatbot to get recommendations.",
             liveLink: "#",
+            repoLink: "https://github.com/Badass-Nemesis/Personal-Finance-Backend",
         },
         {
             title: "Logo Portal",
@@ -127,6 +128,7 @@ export const RESUME_DATA = {
             description:
                 "A java servlet app which lets users search and download the logos/stickers uploaded by admins.",
             liveLink: "#",
+            repoLink: "https://github.com/Badass-Nemesis/Logo-Portal",
         },
         {
             title: "Little Lemon",
@@ -141,6 +143,7 @@ export const RESUME_DATA = {
             description:
                 "A react native expo snack of Little Lemon App, made as an assignment for Coursera Meta react native course. Users can order & book a reservation in the Little Lemon Restaurant",
             liveLink: "#",
+            repoLink: "https://github.com/Badass-Nemesis/little-lemon-react-native",
         },
         {
             title: "CV",
@@ -153,6 +156,7 @@ export const RESUME_DATA = {
             description:
                 "A minimalist & responsive cv page deployed online. Inspired by the minimalist cv of BartoszJarocki/cv",
             liveLink: "http://13.203.75.14/",
+            repoLink: "https://github.com/Badass-Nemesis/my-cv",
         },
         {
             title: "School Proximity API",
@@ -166,6 +170,7 @@ export const RESUME_DATA = {
             description:
                 "A Backend project made for Educase backend internship assignment, where users can manage school data by adding new schools and retrieve a list of schools sorted by proximity to a user-specified location (used Haversine formula).",
             liveLink: "https://school-proximity-api.onrender.com/api/schools/listSchools?latitude=20&longitude=-10",
+            repoLink: "https://github.com/Badass-Nemesis/school-proximity-api",
         },
         {
             title: "Blog App",
@@ -178,8 +183,9 @@ export const RESUME_DATA = {
                 "MySQL",
             ],
             description:
-                "A full stack blog (& course sell) webapp made as an assignment for SciAstra internship. Admins can schedule blogs (future release) and create/update courses.",
+                "A full stack blog (& course selling) webapp made as an assignment for SciAstra internship. Admins can schedule blogs (future release) and create/update courses.",
             liveLink: "#",
+            repoLink: "https://github.com/Badass-Nemesis/blog-demo",
         },
         {
             title: "Notes App",
@@ -192,6 +198,7 @@ export const RESUME_DATA = {
             description:
                 "A Backend app made as an assignment for Intellectworks internship. It handles user authentication, profile management, and note storage with Firestore.",
             liveLink: "#",
+            repoLink: "https://github.com/Badass-Nemesis/firebase-demo",
         },
         {
             title: "School Management System API",
@@ -205,6 +212,7 @@ export const RESUME_DATA = {
             description:
                 "A Backend project made for Neina (Previously Nexorand) backend internship assignment. Features include user registration and authentication, class management, exam and result management, attendance tracking, and report generation",
             liveLink: "#",
+            repoLink: "https://github.com/Badass-Nemesis/school-management-system",
         },
         {
             title: "Another Blog App",
@@ -218,6 +226,7 @@ export const RESUME_DATA = {
             description:
                 "A blog app made as a fullstack assignment for Hallienz internship. Users can perform CRUD operations on their blogs.",
             liveLink: "#",
+            repoLink: "https://github.com/Badass-Nemesis/hallienz_frontend",
         },
         {
             title: "Force Shorts Quality",
@@ -228,6 +237,7 @@ export const RESUME_DATA = {
             description:
                 "A basic tampermonkey/violentmonkey userscript that forces youtube shorts quality on browser to be 720p.",
             liveLink: "#",
+            repoLink: "https://github.com/Badass-Nemesis/force-shorts-quality",
         },
     ],
 } as const;

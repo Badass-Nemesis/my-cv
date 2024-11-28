@@ -32,7 +32,7 @@ export default function FooterModalButton({ children }: FooterModalButtonInterfa
             {/* if this conditional code is not here then the .modal-container close thing will make the 
             modal appear even without pressing the button as it is reading for it the whole time*/}
             {isModalOpen && <Modal isOpen={isModalOpen} handleClose={toggleModal}>
-                <div className="flex flex-col gap-2 w-2/3 h-auto mt-10">
+                <div className="flex flex-col gap-2 w-2/3 h-auto">
                     <div className="underline font-heading font-bold md:font-semibold">Actions</div>
                     <a href={getURL('CV Document')}><button className="modal-btn">Download CV</button></a>
                     <button className="modal-btn" onClick={toggleTheme}>Toggle {theme === 'light' ? 'Dark' : 'Light'} Mode</button>
@@ -46,10 +46,11 @@ export default function FooterModalButton({ children }: FooterModalButtonInterfa
                 </div>
                 <div className="flex flex-col gap-2 w-2/3 h-auto">
                     <div className="underline font-heading font-bold md:font-semibold">Repositories</div>
-                    {/* <ThemeSwitch className="modal-btn" /> */}
-                    {/* <a href={getURL('X')}><button className="modal-btn">X</button></a> */}
-                    <a href={getURL('GitHub')}><button className="modal-btn">GitHub</button></a>
-                    <a href={getURL('LinkedIn')}><button className="modal-btn">LinkedIn</button></a>
+                    {RESUME_DATA.projects.map((project, index) => (
+                        project.repoLink && (
+                            <a key={index} href={project.repoLink}><button className="modal-btn">{project.title}</button></a>
+                        )
+                    ))}
                 </div>
             </Modal>}
         </>
