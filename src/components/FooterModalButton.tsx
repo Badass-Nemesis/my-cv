@@ -1,12 +1,15 @@
 'use client'
 
 import { RESUME_DATA } from "@/resumeData";
-import { ReactNode, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import Modal from "./Modal";
 // import ThemeSwitch from "./ThemeSwitch";
 import { useTheme } from "./ThemeContext";
+import { menuIcon } from "@/assets";
+import Image from "next/image";
 
 interface FooterModalButtonInterface {
+    image?: boolean;
     children: ReactNode;
 }
 
@@ -16,9 +19,15 @@ function getURL(name: string): string {
     return cvObject.url;
 }
 
-export default function FooterModalButton({ children }: FooterModalButtonInterface) {
+export default function FooterModalButton({ image = false, children }: FooterModalButtonInterface) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const { theme, toggleTheme } = useTheme();
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    useEffect(() => {
+        // Set the initial state based on the theme
+        setIsDarkMode(theme === 'dark');
+    }, [theme]);
 
     const toggleModal = () => {
         setIsModalOpen(isModalOpen ? false : true);
@@ -27,7 +36,19 @@ export default function FooterModalButton({ children }: FooterModalButtonInterfa
     return (
         <>
             <button onClick={toggleModal}>
-                {children}
+                {image ? (
+                    <div className="footer-menu-btn">
+                        <Image
+                            src={menuIcon}
+                            alt="menu icon"
+                            width={25}
+                            height={25}
+                            style={{ filter: isDarkMode ? 'invert(100%)' : 'none' }}
+                        />
+                    </div>
+                ) : (
+                    children
+                )}
             </button>
             {/* if this conditional code is not here then the .modal-container close thing will make the 
             modal appear even without pressing the button as it is reading for it the whole time*/}

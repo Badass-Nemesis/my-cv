@@ -10,6 +10,7 @@ import myPic from "@/assets/myPic.jpg";
 import codeforcesIcon from "@/assets/CodeforcesIcon.svg";
 import leetcodeIcon from "@/assets/LeetCodeIcon.svg";
 import codechefIcon from "@/assets/CodeChefIcon.svg";
+import menuIcon from "@/assets/MenuIcon.svg";
 
 export {
     githubIcon,
@@ -24,4 +25,5 @@ export {
     codeforcesIcon,
     leetcodeIcon,
     codechefIcon,
+    menuIcon,
 }

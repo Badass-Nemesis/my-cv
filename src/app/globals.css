@@ -40,7 +40,11 @@
     }
 
     .footer {
-        @apply fixed bottom-0 w-full flex justify-center items-center bg-background border-t border-border font-content text-sm text-text-content transition-colors duration-500;
+        @apply flex fixed bottom-0 z-10 w-full justify-center items-center bg-background border-t border-border font-content text-sm text-text-content transition-colors duration-500;
+    }
+
+    .footer-menu-btn {
+        @apply fixed bottom-4 right-4 p-2 border-[0.1px] border-border bg-background hover:bg-footer-btn-hover rounded-full transition-all hover:scale-110 hover:rotate-90 duration-500;
     }
 
     .modal-container {
@@ -76,6 +80,7 @@
     --modal-container-bg-color: #d1d5db;
     --modal-btn-border-color: #f3f4f6;
     --modal-btn-color-hover: #94a3b8;
+    --footer-menu-btn-hover: #9ca3af;
 }
 
 .dark {
@@ -94,4 +99,5 @@
     --modal-container-bg-color: #4b5563;
     --modal-btn-border-color: #6b7280;
     --modal-btn-color-hover: #374151;
+    --footer-menu-btn-hover: #4b5563;
 }

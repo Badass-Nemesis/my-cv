@@ -152,6 +152,7 @@ export const RESUME_DATA = {
                 "TypeScript",
                 "ReactJS/Next.js",
                 "Tailwind CSS",
+                "Docker",
             ],
             description:
                 "A minimalist & responsive cv page deployed online. Inspired by the minimalist cv of BartoszJarocki/cv",

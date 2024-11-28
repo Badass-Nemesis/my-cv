@@ -34,7 +34,7 @@ export default {
         'modal-container': 'var(--modal-container-bg-color)',
         'modal-btn': 'var(--modal-btn-border-color)',
         'modal-btn-hover': 'var(--modal-btn-color-hover)',
-
+        'footer-btn-hover': 'var(--footer-menu-btn-hover)',
       }
     },
   },
