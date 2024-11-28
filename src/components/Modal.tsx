@@ -48,8 +48,9 @@ export default function Modal({ children, isOpen, handleClose }: ModalInterface)
     return (
         <ReactPortal>
             <div className="modal">
-                <div className="modal-container relative">
-                    <div>
+                <div className="modal-container">
+                    <div className="fixed translate-x-40 -translate-y-40 z-50">
+                        {/* ha */}
                         <button className="modal-close-btn" onClick={handleClose}>
                             <Image
                                 src={closeIcon}
