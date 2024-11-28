@@ -66,7 +66,7 @@ export const RESUME_DATA = {
     education: [
         {
             school: "Techno International Batanagar",
-            degree: "Bachelor of Technology in Computer Science Engineering (8.91 CGPA)",
+            degree: "Bachelor of Technology in Computer Science Engineering",
             start: "2020",
             end: "2024",
         },
@@ -156,7 +156,7 @@ export const RESUME_DATA = {
             ],
             description:
                 "A minimalist & responsive cv page deployed online. Inspired by the minimalist cv of BartoszJarocki/cv",
-            liveLink: "http://13.203.75.14/",
+            liveLink: "https://cv.harshitanant.dev/",
             repoLink: "https://github.com/Badass-Nemesis/my-cv",
         },
         {
