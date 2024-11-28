@@ -49,17 +49,19 @@ export default function Modal({ children, isOpen, handleClose }: ModalInterface)
         <ReactPortal>
             <div className="modal">
                 <div className="modal-container">
-                    <div className="fixed translate-x-40 md:translate-x-48 lg:translate-x-56 -translate-y-3 z-50">
-                        {/* ha */}
-                        <button className="modal-close-btn" onClick={handleClose}>
-                            <Image
-                                src={closeIcon}
-                                alt="closeIcon"
-                                style={{ filter: theme === 'dark' ? 'invert(100%)' : 'none' }}
-                            />
-                        </button>
+                    {/* ha */}
+                    <button className="modal-close-btn" onClick={handleClose}>
+                        <Image
+                            src={closeIcon}
+                            alt="closeIcon"
+                            width={20}
+                            height={20}
+                            style={{ filter: theme === 'dark' ? 'invert(100%)' : 'none' }}
+                        />
+                    </button>
+                    <div className="flex flex-col items-center justify-start w-full h-full overflow-y-auto">
+                        {children}
                     </div>
-                    {children}
                 </div>
             </div>
         </ReactPortal>

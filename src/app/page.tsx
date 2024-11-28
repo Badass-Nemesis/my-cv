@@ -11,7 +11,7 @@ import { ThemeProvider } from "@/components/ThemeContext";
 export default function Home() {
   return (
     <ThemeProvider>
-      <div className="flex flex-col text-white h-auto md:p-10 justify-center items-center overflow-y-auto">
+      <div className="flex flex-col h-auto px-2 py-2 md:p-10 justify-center items-center overflow-y-auto">
         {/* Hello World */}
         <div id="body-wala" className="container w-full md:w-a4lite lg:w-a4 rounded-xl overflow-hidden">
           <Bio />

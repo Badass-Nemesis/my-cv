@@ -34,7 +34,7 @@ export default function FooterModalButton({ children }: FooterModalButtonInterfa
             {isModalOpen && <Modal isOpen={isModalOpen} handleClose={toggleModal}>
                 <div className="flex flex-col gap-2 w-2/3 h-auto">
                     <div className="underline font-heading font-bold md:font-semibold">Actions</div>
-                    <a href={getURL('CV Document')}><button className="modal-btn">Download CV</button></a>
+                    <a href={getURL('CV Document')}><button className="modal-btn">View/Download CV</button></a>
                     <button className="modal-btn" onClick={toggleTheme}>Toggle {theme === 'light' ? 'Dark' : 'Light'} Mode</button>
                 </div>
                 <div className="flex flex-col gap-2 w-2/3 h-auto">
