@@ -59,7 +59,7 @@ export default function Modal({ children, isOpen, handleClose }: ModalInterface)
                             style={{ filter: theme === 'dark' ? 'invert(100%)' : 'none' }}
                         />
                     </button>
-                    <div className="flex flex-col items-center justify-start w-full h-full overflow-y-auto">
+                    <div className="flex flex-col items-center justify-start w-full h-full overflow-y-auto gap-5 mt-4">
                         {children}
                     </div>
                 </div>
