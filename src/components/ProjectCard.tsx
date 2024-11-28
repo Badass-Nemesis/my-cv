@@ -16,18 +16,18 @@ export default function ProjectCard({ title, isLive, liveLink, description, tech
                 {isLive ? (
                     <div className="flex flex-row items-center">
                         <a href={liveLink}>
-                            <h1 className="project-heading-live font-bold md:font-semibold">{title}</h1>
+                            <h1 className="project-heading-live font-bold md:font-semibold text-[0.9375rem] md:text-base">{title}</h1>
                         </a>
                         <div className="bg-pulse-color ml-1.5 w-1.5 h-1.5 rounded-full animate-pulse"></div>
                     </div>
                 ) : (
-                    <h1 className="project-heading">{title}</h1>
+                    <h1 className="project-heading font-bold md:font-semibold text-[0.9375rem] md:text-base">{title}</h1>
                 )}
             </div>
             <p className="font-content text-xs text-text-content mb-4">
                 {description}
             </p>
-            <div className="flex flex-wrap gap-1.5 text-xs tracking-tighter font-content mt-auto">
+            <div className="flex flex-wrap gap-1.5 text-xs tracking-tighter font-content">
                 {techStack.map((stack, index) => (
                     <Tag name={stack} key={index} /> // this is basically prop-drilling. I need to fix this
                 ))}
