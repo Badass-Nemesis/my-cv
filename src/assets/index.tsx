@@ -11,6 +11,7 @@ import codeforcesIcon from "@/assets/CodeforcesIcon.svg";
 import leetcodeIcon from "@/assets/LeetCodeIcon.svg";
 import codechefIcon from "@/assets/CodeChefIcon.svg";
 import menuIcon from "@/assets/MenuIcon.svg";
+import rightArrowIcon from "@/assets/RightArrowIcon.svg";
 
 export {
     githubIcon,
@@ -26,4 +27,5 @@ export {
     leetcodeIcon,
     codechefIcon,
     menuIcon,
+    rightArrowIcon,
 }

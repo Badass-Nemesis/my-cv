@@ -59,7 +59,7 @@ export const RESUME_DATA = {
         },
         {
             name: "CV Document",
-            url: "https://drive.google.com/file/d/1f_0ZayXhCRpiPkLd33hShE-m2aNdDnT9/view",
+            url: "https://drive.google.com/file/d/1Uka5gkpYgDY_Fbw2_UCVPadeoDyGNjXA/view",
             icon: pdfIcon,
         },
     ],
@@ -98,6 +98,20 @@ export const RESUME_DATA = {
     ],
     projects: [
         {
+            title: "YouTube Chatbot",
+            isLive: false,
+            techStack: [
+                "TypeScript",
+                "Node.js",
+                "GoogleAPI",
+                "Docker",
+            ],
+            description:
+                "A Node.js bot that fetches and replies to YouTube live chat messages using YouTube API, OAuth2.0, and service accounts. Customize model behavior with Ollama and deploy using Docker for scalability.",
+            liveLink: "#",
+            repoLink: "https://github.com/Badass-Nemesis/little-lemon-react-native",
+        },
+        {
             title: "Personal Finance App",
             isLive: false,
             techStack: [
@@ -114,6 +128,20 @@ export const RESUME_DATA = {
                 "A webapp to manage finances, fetch Paytm Payments Bank's passbook details from your gmail, create category, use interactive graph and an OpenAI powered Chatbot to get recommendations.",
             liveLink: "#",
             repoLink: "https://github.com/Badass-Nemesis/Personal-Finance-Backend",
+        },
+        {
+            title: "CV",
+            isLive: true,
+            techStack: [
+                "TypeScript",
+                "ReactJS/Next.js",
+                "Tailwind CSS",
+                "Docker",
+            ],
+            description:
+                "A minimalist & responsive cv page deployed online. Inspired by the minimalist cv of BartoszJarocki/cv",
+            liveLink: "https://cv.harshitanant.dev/",
+            repoLink: "https://github.com/Badass-Nemesis/my-cv",
         },
         {
             title: "Logo Portal",
@@ -144,20 +172,6 @@ export const RESUME_DATA = {
                 "A react native expo snack of Little Lemon App, made as an assignment for Coursera Meta react native course. Users can order & book a reservation in the Little Lemon Restaurant",
             liveLink: "#",
             repoLink: "https://github.com/Badass-Nemesis/little-lemon-react-native",
-        },
-        {
-            title: "CV",
-            isLive: true,
-            techStack: [
-                "TypeScript",
-                "ReactJS/Next.js",
-                "Tailwind CSS",
-                "Docker",
-            ],
-            description:
-                "A minimalist & responsive cv page deployed online. Inspired by the minimalist cv of BartoszJarocki/cv",
-            liveLink: "https://cv.harshitanant.dev/",
-            repoLink: "https://github.com/Badass-Nemesis/my-cv",
         },
         {
             title: "School Proximity API",
