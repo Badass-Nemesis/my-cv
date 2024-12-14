@@ -11,7 +11,7 @@ interface ProjectCardInterface {
 // putting tags = [] so that tags.map doesn't give undefined error
 export default function ProjectCard({ title, isLive, liveLink, description, techStack = [] }: ProjectCardInterface) {
     return (
-        <div className="border border-gray-600 p-3 rounded-lg flex flex-col">
+        <div className="border border-gray-600 p-3 rounded-lg flex flex-col h-full">
             <div className="flex items-center mb-2">
                 {isLive ? (
                     <div className="flex flex-row items-center">
