@@ -1,15 +1,27 @@
+"use client";
+
 import { ReactNode, useEffect } from "react";
 import ReactPortal from "./ReactPortal";
 import { closeIcon } from "@/assets";
 import Image from "next/image";
 import { useTheme } from "@/components/ThemeContext";
-// import IconButton from "./IconButton";
+import { motion } from 'framer-motion';
 
 interface ModalInterface {
     children: ReactNode;
     isOpen: boolean;
     handleClose: () => void;
 }
+
+const backdropVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 }
+};
+
+const modalVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1 }
+};
 
 export default function Modal({ children, isOpen, handleClose }: ModalInterface) {
     const { theme } = useTheme(); // Access the current theme
@@ -47,9 +59,8 @@ export default function Modal({ children, isOpen, handleClose }: ModalInterface)
 
     return (
         <ReactPortal>
-            <div className="modal">
-                <div className="modal-container">
-                    {/* ha */}
+            <motion.div className="modal" initial="hidden" animate="visible" exit="hidden" variants={backdropVariants}>
+                <motion.div className="modal-container" initial="hidden" animate="visible" exit="hidden" variants={modalVariants}>
                     <button className="modal-close-btn" onClick={handleClose}>
                         <Image
                             src={closeIcon}
@@ -62,8 +73,8 @@ export default function Modal({ children, isOpen, handleClose }: ModalInterface)
                     <div className="flex flex-col items-center justify-start w-full h-full overflow-y-auto gap-5 mt-4">
                         {children}
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </ReactPortal>
     );
 }

@@ -6,6 +6,23 @@ import ProjectCard from "@/components/ProjectCard";
 import { rightArrowIcon } from '@/assets/index';
 import Image from 'next/image';
 import { useTheme } from '@/components/ThemeContext';
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            staggerChildren: 0.3
+        }
+    }
+};
+
+const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }
+};
 
 export default function Projects() {
     const { theme } = useTheme();
@@ -15,25 +32,30 @@ export default function Projects() {
 
     useEffect(() => {
         setIsDarkMode(theme === "dark");
-    }, [theme])
-    // no need for 
+    }, [theme]);
 
     return (
         <section className="p-5">
             <h1 className="text-lg md:text-lg text-text-heading font-heading font-bold md:font-semibold mb-2">Projects</h1>
-            <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-2">
+            <motion.div
+                className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-2"
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+            >
                 {RESUME_DATA.projects.slice(0, showMore ? RESUME_DATA.projects.length : initialProjects).map((project, index) => (
-                    <ProjectCard
-                        key={index}
-                        title={project.title}
-                        isLive={project.isLive}
-                        liveLink={project.liveLink}
-                        description={project.description}
-                        techStack={project.techStack}
-                    />
+                    <motion.div key={index} variants={itemVariants}>
+                        <ProjectCard
+                            title={project.title}
+                            isLive={project.isLive}
+                            liveLink={project.liveLink}
+                            description={project.description}
+                            techStack={project.techStack}
+                        />
+                    </motion.div>
                 ))}
                 {RESUME_DATA.projects.length > initialProjects && !showMore && (
-                    <div className="flex items-end p-2">
+                    <motion.div className="flex items-end p-2" variants={itemVariants}>
                         <button
                             onClick={() => setShowMore(true)}
                             className="inline-flex text-text-content hover:text-text-content-hover text-xs rounded underline decoration-dotted gap-0.5"
@@ -47,9 +69,9 @@ export default function Projects() {
                                 style={{ filter: isDarkMode ? "invert(100%)" : "none" }}
                             />
                         </button>
-                    </div>
+                    </motion.div>
                 )}
-            </div>
+            </motion.div>
         </section>
     );
 }
