@@ -6,17 +6,10 @@ WORKDIR /app
 COPY package*.json ./
 
 # Remove framer-motion from package.json temporarily
-RUN cp package.json package.json.bak && \
-    sed '/"framer-motion":/d' package.json.bak > package.json
+RUN cp package.json 
 
 # Install remaining dependencies using npm install
-RUN npm install
-
-# Revert package.json to include framer-motion
-RUN mv package.json.bak package.json
-
-# Install framer-motion with the --legacy-peer-deps flag
-RUN npm install framer-motion --legacy-peer-deps
+RUN npm install --force
 
 # Copy all source files to the working directory
 COPY . .
