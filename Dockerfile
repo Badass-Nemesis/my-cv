@@ -5,9 +5,6 @@ WORKDIR /app
 
 COPY package*.json ./
 
-# Remove framer-motion from package.json temporarily
-RUN cp package.json 
-
 # Install remaining dependencies using npm install
 RUN npm install --force
 
