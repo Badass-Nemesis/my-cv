@@ -59,7 +59,7 @@ export const RESUME_DATA = {
         },
         {
             name: "CV Document",
-            url: "https://drive.google.com/file/d/1Uka5gkpYgDY_Fbw2_UCVPadeoDyGNjXA/view",
+            url: "https://drive.google.com/file/d/1rv2hFOsl18F9KEKOCc7CncrYJ8QR2lNM/view",
             icon: pdfIcon,
         },
     ],
