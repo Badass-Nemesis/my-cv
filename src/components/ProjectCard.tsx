@@ -15,7 +15,7 @@ export default function ProjectCard({ title, isLive, liveLink, description, tech
             <div className="flex items-center mb-2">
                 {isLive ? (
                     <div className="flex flex-row items-center">
-                        <a href={liveLink}>
+                        <a href={liveLink} target="_blank" rel="noopener noreferrer">
                             <h1 className="project-heading-live font-bold md:font-semibold text-[0.9375rem] md:text-base">{title}</h1>
                         </a>
                         <div className="bg-pulse-color ml-1.5 w-1.5 h-1.5 rounded-full animate-pulse"></div>

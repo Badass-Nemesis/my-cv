@@ -15,11 +15,12 @@ export default function Location() {
     }, [theme])
 
     return (
-        <a href={RESUME_DATA.locationLink} className="location-link">
+        <a href={RESUME_DATA.locationLink} className="location-link" target="_blank" rel="noopener noreferrer">
             <Image
                 src={globeIcon}
                 alt="globeIcon.svg"
-                width={15} height={15}
+                width={15}
+                height={15}
                 style={{ filter: isDarkMode ? 'invert(100%)' : 'none' }}
             />
             <p>{RESUME_DATA.location}</p>

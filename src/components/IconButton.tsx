@@ -40,7 +40,7 @@ export default function IconButton({ link, iconSrc }: IconButtonInterface) {
     }, [theme]);
 
     return (
-        <a href={link} className="icon-btn">
+        <a href={link} className="icon-btn" target="_blank" rel="noopener noreferrer">
             <Image
                 src={iconSrc}
                 alt="icon"

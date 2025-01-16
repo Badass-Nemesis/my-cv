@@ -14,7 +14,7 @@ export const RESUME_DATA = {
     about:
         "Full Stack Developer eager to build web apps that simplify life through innovation and experimentation.",
     summary:
-        "I'm just a guy on Earth, a dedicated Full Stack Developer passionate about learning through hands-on projects. I mainly focus on backend development with Node.js/Express.js and have recently started exploring TypeScript. I've dabbled in Java, particularly with a servlet project and DSA. I also enjoy working with React and Next.js to expand my skills. Outside of coding, I relax by playing games.",
+        "I'm just a guy on Earth, a dedicated Full Stack Developer passionate about learning through hands-on projects. I mainly focus on backend development with Node.js/Express.js and have recently started exploring TypeScript. I've dabbled in Java, particularly with a servlet project and DSA. I also enjoy working with React and Next.js to expand my skills. Outside of coding, I unwind by playing games and exploring tech-related articles and videos.",
     // personalWebsiteUrl: "https://jarocki.me",
     contact: [
         {
@@ -139,7 +139,7 @@ export const RESUME_DATA = {
                 "Docker",
             ],
             description:
-                "A minimalist & responsive cv page deployed online. Inspired by the minimalist cv of BartoszJarocki/cv",
+                "A minimalist & responsive cv page deployed online. With AWS Lambda and a Next.js redirect page integrated to ensure optimized usage of free tier AWS EC2 instance. Inspired by the minimalist cv of BartoszJarocki/cv",
             liveLink: "https://cv.harshitanant.dev/",
             repoLink: "https://github.com/Badass-Nemesis/my-cv",
         },
@@ -157,6 +157,18 @@ export const RESUME_DATA = {
                 "A java servlet app which lets users search and download the logos/stickers uploaded by admins.",
             liveLink: "#",
             repoLink: "https://github.com/Badass-Nemesis/Logo-Portal",
+        },
+        {
+            title: "Swiggy Number Fetcher",
+            isLive: true,
+            techStack: [
+                "TypeScript",
+                "ReactJS/Next.js"
+            ],
+            description:
+                "A Next.js app to automatically fetch swiggy number from ninjaotp and check if the number is registered in swiggy or not. (This is made for Educational purposes only)",
+            liveLink: "https://swiggy-number-fetcher.vercel.app/",
+            repoLink: "https://github.com/Badass-Nemesis/swiggy-number-fetcher",
         },
         {
             title: "Little Lemon",

@@ -36,7 +36,7 @@ export default function ReactPortal({ children }: ReactPortalInterface) {
         }
     }, []);
 
-    // ensureing that the portal is only created when the wrapperElement is ready
+    // ensuring that the portal is only created when the wrapperElement is ready
     if (wrapperElement === null) return null;
 
     return createPortal(children, wrapperElement);
