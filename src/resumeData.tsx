@@ -186,6 +186,20 @@ export const RESUME_DATA = {
             repoLink: "https://github.com/Badass-Nemesis/little-lemon-react-native",
         },
         {
+            title: "YC Directory",
+            isLive: false,
+            techStack: [
+                "TypeScript",
+                "ReactJS/Next.js",
+                "Sanity",
+                "Sentry"
+            ],
+            description:
+                "A Next.js app built to learn Sentry for error tracking, Sanity for content management, and performance optimization using PPR and ISR. It’s a basic YC Directory-style platform for pitching startup ideas.",
+            liveLink: "https://yc-directory-xfjl.vercel.app/",
+            repoLink: "https://github.com/Badass-Nemesis/yc_directory",
+        },
+        {
             title: "School Proximity API",
             isLive: true,
             techStack: [
