@@ -143,6 +143,33 @@ export const RESUME_DATA = {
             liveLink: "https://cv.harshitanant.dev/",
             repoLink: "https://github.com/Badass-Nemesis/my-cv",
         },
+
+        {
+            title: "YC Directory",
+            isLive: true,
+            techStack: [
+                "TypeScript",
+                "ReactJS/Next.js",
+                "Sanity",
+                "Sentry"
+            ],
+            description:
+                "A Next.js app built to learn Sentry for error tracking, Sanity for content management, and performance optimization using PPR and ISR. It’s a basic YC Directory-style platform for pitching startup ideas.",
+            liveLink: "https://yc-directory-xfjl.vercel.app/",
+            repoLink: "https://github.com/Badass-Nemesis/yc_directory",
+        },
+        {
+            title: "Swiggy Number Fetcher",
+            isLive: true,
+            techStack: [
+                "TypeScript",
+                "ReactJS/Next.js"
+            ],
+            description:
+                "A Next.js app to automatically fetch swiggy number from ninjaotp and check if the number is registered in swiggy or not. (This is made for Educational purposes only)",
+            liveLink: "https://swiggy-number-fetcher.vercel.app/",
+            repoLink: "https://github.com/Badass-Nemesis/swiggy-number-fetcher",
+        },
         {
             title: "Logo Portal",
             isLive: false,
@@ -159,18 +186,6 @@ export const RESUME_DATA = {
             repoLink: "https://github.com/Badass-Nemesis/Logo-Portal",
         },
         {
-            title: "Swiggy Number Fetcher",
-            isLive: true,
-            techStack: [
-                "TypeScript",
-                "ReactJS/Next.js"
-            ],
-            description:
-                "A Next.js app to automatically fetch swiggy number from ninjaotp and check if the number is registered in swiggy or not. (This is made for Educational purposes only)",
-            liveLink: "https://swiggy-number-fetcher.vercel.app/",
-            repoLink: "https://github.com/Badass-Nemesis/swiggy-number-fetcher",
-        },
-        {
             title: "Little Lemon",
             isLive: false,
             techStack: [
@@ -184,20 +199,6 @@ export const RESUME_DATA = {
                 "A react native expo snack of Little Lemon App, made as an assignment for Coursera Meta react native course. Users can order & book a reservation in the Little Lemon Restaurant",
             liveLink: "#",
             repoLink: "https://github.com/Badass-Nemesis/little-lemon-react-native",
-        },
-        {
-            title: "YC Directory",
-            isLive: false,
-            techStack: [
-                "TypeScript",
-                "ReactJS/Next.js",
-                "Sanity",
-                "Sentry"
-            ],
-            description:
-                "A Next.js app built to learn Sentry for error tracking, Sanity for content management, and performance optimization using PPR and ISR. It’s a basic YC Directory-style platform for pitching startup ideas.",
-            liveLink: "https://yc-directory-xfjl.vercel.app/",
-            repoLink: "https://github.com/Badass-Nemesis/yc_directory",
         },
         {
             title: "School Proximity API",
